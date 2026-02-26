@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Schedule</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 85%;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .lunch {
+            background-color: #ffd966;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Weekly Course Schedule</h1>
+
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+
+    <tr>
+        <td>9:00 - 10:00</td>
+        <td>Data Science</td>
+        <td>Artificial Intelligence</td>
+        <td>Applied Physics</td>
+        <td>Web Technology</td>
+        <td>Linear Algebra</td>
+    </tr>
+
+    <tr>
+        <td>10:00 - 11:00</td>
+        <td>Artificial Intelligence</td>
+        <td>Linear Algebra</td>
+        <td>Data Science</td>
+        <td>Applied Physics</td>
+        <td>Web Technology</td>
+    </tr>
+
+    <!-- Lunch Break using colspan -->
+    <tr>
+        <td>11:00 - 12:00</td>
+        <td colspan="5" class="lunch">Lunch Break</td>
+    </tr>
+
+    <tr>
+        <td>12:00 - 1:00</td>
+        <td>Applied Physics</td>
+        <td>Free Period</td>
+        <td>Web Technology</td>
+        <td>Data Science</td>
+        <td>Artificial Intelligence</td>
+    </tr>
+
+    <tr>
+        <td>1:00 - 2:00</td>
+        <td>Linear Algebra</td>
+        <td>Applied Physics</td>
+        <td>Artificial Intelligence</td>
+        <td>Web Technology</td>
+        <td>Project Work</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <!-- Registration Number -->
+        <label>Registration Number:</label>
+        <input type="text" name="regno" required>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <!-- Course Dropdown -->
+        <label>Select Course:</label>
+        <select name="course" required>
+            <option value="">-- Select Course --</option>
+            <option>Data Science</option>
+            <option>Artificial Intelligence</option>
+            <option>Web Technology</option>
+            <option>Applied Physics</option>
+            <option>Linear Algebra</option>
+        </select>
+
+        <!-- Semester Radio Buttons -->
+        <label>Semester:</label>
+        <div class="radio-group">
+            <input type="radio" name="semester" value="1"> Semester 1<br>
+            <input type="radio" name="semester" value="2"> Semester 2<br>
+            <input type="radio" name="semester" value="3"> Semester 3<br>
+            <input type="radio" name="semester" value="4"> Semester 4
+        </div>
+
+        <!-- Terms Checkbox -->
+        <div class="checkbox-group">
+            <input type="checkbox" required>
+            I agree to the Terms and Conditions
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>
