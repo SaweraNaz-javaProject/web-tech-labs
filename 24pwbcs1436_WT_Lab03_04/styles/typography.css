@@ -1,0 +1,26 @@
+.font1{
+font-family:'Roboto';
+font-size:30px;
+}
+
+.font2{
+font-family:'Poppins';
+font-size:2em;
+}
+
+.font3{
+font-family:'Lobster';
+font-size:3rem;
+}
+
+.align{
+text-align:center;
+}
+
+.transform{
+text-transform:uppercase;
+}
+
+.shadow{
+text-shadow:2px 2px 5px gray;
+}

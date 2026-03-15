@@ -1,0 +1,120 @@
+/* BASIC SELECTORS */
+
+p{
+color:blue;
+}
+
+#mainHeading{
+color:red;
+}
+
+.text{
+font-weight:bold;
+}
+
+*{
+font-family:Arial;
+}
+
+/* ATTRIBUTE SELECTORS */
+
+input[type="text"]{
+border:2px solid black;
+}
+
+a[href]{
+color:purple;
+}
+
+a[href*="google"]{
+color:orange;
+}
+
+/* COMBINATORS */
+
+div p{
+background-color:lightgray;
+}
+
+ul > li{
+color:darkblue;
+}
+
+h1 + p{
+background-color:yellow;
+}
+
+h1 ~ ul{
+border:2px solid black;
+}
+
+/* PSEUDO CLASSES */
+
+a:hover{
+color:red;
+}
+
+li:first-child{
+font-weight:bold;
+}
+
+li:last-child{
+color:green;
+}
+
+li:nth-child(2){
+color:purple;
+}
+
+input:focus{
+border:3px solid blue;
+}
+
+/* PSEUDO ELEMENTS */
+
+p::first-letter{
+font-size:30px;
+color:red;
+}
+
+p::after{
+content:" ✔";
+color:green;
+}
+.bg1{
+background-color:lightblue;
+padding:40px;
+margin:20px;
+}
+
+.bg2{
+background-image:url('../images/sample.jpg');
+background-size:cover;
+padding:40px;
+margin:20px;
+color:white;
+}
+
+.bg3{
+background:linear-gradient(to right, red, yellow);
+padding:40px;
+margin:20px;
+}
+table{
+border-collapse:collapse;
+width:60%;
+}
+
+th,td{
+border:1px solid black;
+padding:10px;
+text-align:center;
+}
+
+tr:nth-child(even){
+background-color:#f2f2f2;
+}
+
+tr:hover{
+background-color:lightyellow;
+}

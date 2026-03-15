@@ -1,0 +1,86 @@
+.btn1{
+background-color:blue;
+color:white;
+padding:10px 20px;
+border:none;
+}
+
+.btn1:hover{
+background-color:darkblue;
+}
+
+.btn2{
+background-color:green;
+color:white;
+padding:10px 20px;
+border-radius:20px;
+border:none;
+}
+
+.btn3{
+background:linear-gradient(to right, red, orange);
+color:white;
+padding:10px 20px;
+border:none;
+}
+
+.btn4{
+background-color:gray;
+color:white;
+padding:10px 20px;
+border:none;
+opacity:0.6;
+}
+input{
+padding:8px;
+width:250px;
+border:2px solid gray;
+}
+
+input:focus{
+border-color:blue;
+}
+
+form{
+background-color:#f9f9f9;
+padding:20px;
+width:300px;
+border-radius:10px;
+}
+.card{
+width:250px;
+border:1px solid #ccc;
+border-radius:10px;
+padding:15px;
+margin:20px;
+box-shadow:2px 2px 10px gray;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+.nav{
+list-style:none;
+display:flex;
+background-color:black;
+padding:10px;
+}
+
+.nav li{
+margin-right:20px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+}
+
+.nav a:hover{
+color:yellow;
+}
