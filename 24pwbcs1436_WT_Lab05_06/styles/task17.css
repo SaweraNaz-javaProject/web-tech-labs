@@ -1,0 +1,123 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
+}
+
+/* HEADER */
+
+.header{
+background:#003366;
+color:white;
+padding:25px;
+}
+
+/* SECTION */
+
+.section{
+padding:20px;
+}
+
+/* BOX */
+
+.box{
+background:#003366;
+color:white;
+padding:15px;
+border-radius:8px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(244, 242, 242, 0.1);
+text-align:center;
+}
+
+/* FOOTER */
+
+.footer{
+background:#003366;
+color:white;
+padding:15px;
+margin-top:20px;
+}
+
+/* ===================== */
+/* VISIBILITY UTILITIES */
+/* ===================== */
+
+.hide-mobile{
+display:none;
+}
+
+.show-tablet{
+display:none;
+}
+
+@media(min-width:768px){
+
+.show-tablet{
+display:block;
+}
+
+.hide-mobile{
+display:block;
+}
+
+}
+
+/* ===================== */
+/* SPACING UTILITIES */
+/* ===================== */
+
+.m-20{
+margin:20px;
+}
+
+.p-20{
+padding:20px;
+}
+
+.gap-15{
+gap:15px;
+}
+
+/* ===================== */
+/* TEXT UTILITIES */
+/* ===================== */
+
+.text-center{
+text-align:center;
+}
+
+@media(min-width:768px){
+
+.text-left-tablet{
+text-align:left;
+}
+
+}
+
+/* ===================== */
+/* FLEX UTILITIES */
+/* ===================== */
+
+.flex{
+display:flex;
+}
+
+.flex-column{
+flex-direction:column;
+}
+
+@media(min-width:1024px){
+
+.flex-row-desktop{
+flex-direction:row;
+}
+
+}

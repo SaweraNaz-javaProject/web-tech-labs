@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Float Layout</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f6f8;
+}
+
+header{
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.container{
+width:90%;
+margin:auto;
+overflow:auto;
+padding:20px;
+}
+
+.article{
+width:65%;
+float:left;
+background:white;
+padding:20px;
+box-shadow:0 0 10px gray;
+}
+
+.sidebar{
+width:30%;
+float:right;
+background:#e3e9f0;
+padding:20px;
+box-shadow:0 0 10px gray;
+}
+
+footer{
+clear:both;
+background:#003366;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+.back{
+display:inline-block;
+margin-top:20px;
+padding:10px 15px;
+background:#333;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Float Magazine Layout</h1>
+</header>
+
+<div class="container">
+
+<div class="article">
+
+<h2>Main Article</h2>
+
+<p>
+This is the main article section. It uses <b>float:left</b> to stay on the left side
+while the sidebar appears on the right.
+</p>
+
+<p>
+Float layouts were commonly used before Flexbox and Grid became popular.
+They allow content to wrap around elements.
+</p>
+
+</div>
+
+<div class="sidebar">
+
+<h3>Sidebar</h3>
+
+<ul>
+<li>Latest News</li>
+<li>Popular Articles</li>
+<li>Categories</li>
+<li>Contact</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Web Technology Lab</p>
+
+<a class="back" href="../index.html">⬅ Back to Home</a>
+
+</footer>
+
+</body>
+</html>

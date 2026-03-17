@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Layout</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+}
+
+/* GRID LAYOUT */
+
+.container{
+display:grid;
+grid-template-areas:
+"header header"
+"sidebar main"
+"footer footer";
+grid-template-columns:200px 1fr;
+}
+
+/* HEADER */
+
+header{
+grid-area:header;
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+position:relative;
+}
+
+/* Decorative Element */
+
+header::after{
+content:"★";
+position:absolute;
+right:20px;
+top:10px;
+font-size:30px;
+color:yellow;
+}
+
+/* SIDEBAR */
+
+aside{
+grid-area:sidebar;
+background:#0055a5;
+color:white;
+padding:20px;
+}
+
+/* MAIN */
+
+main{
+grid-area:main;
+padding:30px;
+}
+
+/* FLEXBOX PROJECT GALLERY */
+
+.projects{
+display:flex;
+flex-wrap:wrap;
+gap:42px;
+}
+
+.card{
+flex:1 1 250px;
+background:#f4f4f4;
+padding:30px;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+grid-area:footer;
+background:#003366;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+.container{
+grid-template-columns:1fr;
+grid-template-areas:
+"header"
+"main"
+"sidebar"
+"footer";
+}
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.projects{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>My Portfolio</h1>
+</header>
+
+<aside>
+<h3>Menu</h3>
+<p>Home</p>
+<p>Projects</p>
+<p>Contact</p>
+</aside>
+
+<main>
+
+<h2>My Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Project 1</h3>
+<p>Web design project</p>
+</div>
+
+<div class="card">
+<h3>Project 2</h3>
+<p>Java application</p>
+</div>
+
+<div class="card">
+<h3>Project 3</h3>
+<p>Database system</p>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+<p>WT Lab 5 & 6 </p>
+<a href="../index.html" style="color:white;">⬅ Back to Home</a>
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Media Query Demo</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
+}
+
+header{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.container{
+display:flex;
+gap:20px;
+padding:30px;
+}
+
+.box{
+flex:1;
+background:white;
+padding:40px;
+text-align:center;
+box-shadow:0 0 8px gray;
+border-radius:8px;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.back{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:white;
+color:#003366;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+/* Responsive design */
+
+@media (max-width:768px){
+
+.container{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Media Query Responsive Layout</h1>
+</header>
+
+<div class="container">
+
+<div class="box">
+<h2>Responsive Layout</h2>
+<p>Responsive Layout
+This section demonstrates how flexible layouts adjust automatically when the screen size changes. It helps create user-friendly websites for different devices.</p>
+</div>
+
+<div class="box">
+<h2>Adaptive Design</h2>
+<p>Screen Adaptability
+Media queries allow websites to detect the screen width and apply different styles. This ensures that the content remains readable on tablets and mobile phones.</p>
+</div>
+
+<div class="box">
+<h2>Modern Web Techniques</h2>
+<p>Modern Web Design
+Using Flexbox with media queries helps developers build responsive interfaces that work smoothly across desktops, laptops, and smartphones.</p>
+</div>
+
+</div>
+
+<footer>
+
+<p>Web Technology Lab</p>
+
+<a class="back" href="../index.html">⬅ Back to Home</a>
+
+</footer>
+
+</body>
+</html>

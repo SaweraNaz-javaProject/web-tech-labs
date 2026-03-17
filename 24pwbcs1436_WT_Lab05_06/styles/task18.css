@@ -1,0 +1,133 @@
+/* DEFAULT (LIGHT MODE) */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
+color:#222;
+}
+
+.header{
+background:#003366;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.container{
+padding:20px;
+display:grid;
+gap:15px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+/* SIMPLE ANIMATION */
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* ======================= */
+/* 🌙 DARK MODE */
+/* ======================= */
+
+@media (prefers-color-scheme: dark){
+
+body{
+background:#121212;
+color:#eee;
+}
+
+.header{
+background:#000;
+}
+
+.card{
+background:#1e1e1e;
+box-shadow:none;
+}
+
+}
+
+/* ======================= */
+/* 🎯 REDUCED MOTION */
+/* ======================= */
+
+@media (prefers-reduced-motion: reduce){
+
+*{
+transition:none !important;
+animation:none !important;
+}
+
+}
+
+/* ======================= */
+/* 🔍 HIGH CONTRAST */
+/* ======================= */
+
+@media (prefers-contrast: high){
+
+body{
+background:white;
+color:black;
+}
+
+.card{
+border:2px solid black;
+}
+
+}
+
+/* ======================= */
+/* 🖨 PRINT STYLES */
+/* ======================= */
+
+@media print{
+
+.header,
+.footer,
+a{
+display:none;
+}
+
+body{
+background:white;
+color:black;
+}
+
+.card{
+box-shadow:none;
+border:1px solid black;
+}
+
+}
+.footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+.footer a{
+color:#ffcc00;
+text-decoration:none;
+font-weight:bold;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+.footer{
+display:block;
+text-align:center;
+margin-top:20px;
+}

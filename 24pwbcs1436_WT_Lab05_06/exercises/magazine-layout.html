@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magazine Layout</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f9f9f9;
+}
+
+header{
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* GRID LAYOUT */
+
+.container{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+padding:20px;
+align-items:start;
+}
+
+/* ARTICLES */
+
+.article{
+background:#ffffff;
+padding:15px;
+border-radius:8px;
+box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+.article img{
+width:100%;
+height:auto;
+border-radius:5px;
+margin-bottom:10px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+background:#eeeeee;
+padding:15px;
+border-radius:8px;
+height:fit-content;
+box-shadow:0 0 6px rgba(0,0,0,0.1);
+}
+
+/* TABLET VIEW */
+
+@media(max-width:992px){
+.container{
+grid-template-columns:1fr 1fr;
+}
+}
+
+/* MOBILE VIEW */
+
+@media(max-width:600px){
+.container{
+grid-template-columns:1fr;
+}
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+footer a{
+display:inline-block;
+margin-top:10px;
+padding:8px 15px;
+background:white;
+color:#222;
+text-decoration:none;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Online Magazine</h1>
+</header>
+
+<div class="container">
+
+<div class="article">
+<h2>Main Article</h2>
+<img src="../images/news3.jpg" alt="Main News">
+<p>Latest technology trends and updates around the world.</p>
+</div>
+
+<div class="sidebar">
+<h3>Latest Updates</h3>
+
+<p><strong>Technology:</strong> New AI tools are transforming education and business worldwide.</p>
+
+<p><strong>World News:</strong> Global leaders discuss economic stability and digital innovation.</p>
+
+<p><strong>Business:</strong> Major companies announce new investments in renewable energy.</p>
+
+<p><strong>Trending:</strong> Social media platforms introduce new features for better user experience.</p>
+
+</div>
+
+<div class="article">
+<h2>Sports News</h2>
+<img src="../images/news2.jpg" alt="Sports News">
+<p>Highlights from recent sports events and matches.</p>
+</div>
+
+<div class="article">
+<h2>Lifestyle</h2>
+<img src="../images/news1.jpg" alt="Lifestyle">
+<p>Tips and trends for a better lifestyle and daily routine.</p>
+</div>
+
+</div>
+
+<footer>
+<p>WT Lab 5 & 6 </p>
+<a href="../index.html">⬅ Back to Home</a>
+</footer>
+
+</body>
+</html>

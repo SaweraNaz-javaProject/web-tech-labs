@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Holy Grail Layout</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
+}
+
+.container{
+display:grid;
+grid-template-areas:
+"header header header"
+"sidebar1 content sidebar2"
+"footer footer footer";
+grid-template-columns:200px 1fr 200px;
+grid-template-rows:auto 1fr auto;
+min-height:100vh;
+gap:10px;
+padding:20px;
+}
+
+header{
+grid-area:header;
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.sidebar1{
+grid-area:sidebar1;
+background:#d9e3f0;
+padding:20px;
+}
+
+.sidebar2{
+grid-area:sidebar2;
+background:#d9e3f0;
+padding:20px;
+}
+
+.content{
+grid-area:content;
+background:white;
+padding:20px;
+box-shadow:0 0 8px gray;
+}
+
+footer{
+grid-area:footer;
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.back{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:white;
+color:#003366;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>Holy Grail Layout</h1>
+</header>
+
+<div class="sidebar1">
+<h3>Left Sidebar</h3>
+<ul>
+<li>Menu 1</li>
+<li>Menu 2</li>
+<li>Menu 3</li>
+</ul>
+</div>
+
+<div class="content">
+<h2>Main Content</h2>
+<p>
+This layout demonstrates the classic Holy Grail page structure
+using CSS Grid. It includes a header, two sidebars, main content,
+and a footer.
+</p>
+</div>
+
+<div class="sidebar2">
+<h3>Right Sidebar</h3>
+<ul>
+<li>Links</li>
+<li>Updates</li>
+<li>News</li>
+</ul>
+</div>
+
+<footer>
+
+<p>Web Technology Lab</p>
+
+<a class="back" href="../index.html">⬅ Back to Home</a>
+
+</footer>
+
+</div>
+
+</body>
+</html>

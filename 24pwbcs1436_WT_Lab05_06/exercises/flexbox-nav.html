@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flexbox Navigation</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
+}
+
+header{
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0055a5;
+padding:10px 20px;
+}
+
+.logo img{
+height:40px;
+}
+
+.menu{
+display:flex;
+gap:20px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:yellow;
+}
+
+.container{
+padding:40px;
+text-align:center;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:90px;
+}
+
+.back{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:white;
+color:#003366;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Flexbox Navigation Bar</h1>
+</header>
+
+<nav>
+
+<div class="logo">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
+</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
+<div class="container">
+
+<h2>Flexbox Layout Example</h2>
+
+<p>
+This navigation bar is created using Flexbox. The logo is aligned on the left
+and the menu items are aligned on the right side.
+</p>
+
+</div>
+
+<footer>
+
+<p>Web Technology Lab</p>
+
+<a class="back" href="../index.html">⬅ Back to Home</a>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Table</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+padding:20px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th, td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#003366;
+color:white;
+}
+
+/* TABLET VIEW (Cards) */
+
+@media(max-width:768px){
+
+table, thead, tbody, th, td, tr{
+display:block;
+}
+
+tr{
+margin-bottom:15px;
+border:1px solid #ccc;
+padding:10px;
+}
+
+td{
+border:none;
+position:relative;
+padding-left:50%;
+}
+
+td::before{
+position:absolute;
+left:10px;
+top:10px;
+font-weight:bold;
+}
+
+td:nth-child(1)::before{content:"Name";}
+td:nth-child(2)::before{content:"Course";}
+td:nth-child(3)::before{content:"Marks";}
+
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+td{
+padding-left:10px;
+}
+
+td::before{
+position:static;
+display:block;
+margin-bottom:5px;
+}
+
+}
+
+footer{
+margin-top:300px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Student Data</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Course</th>
+<th>Marks</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Sawera</td>
+<td>Web Tech</td>
+<td>90</td>
+</tr>
+
+<tr>
+<td>Ali</td>
+<td>AI</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>Naz</td>
+<td>Database</td>
+<td>88</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<footer>
+<a href="../index.html">⬅ Back to Home</a>
+</footer>
+
+</body>
+</html>
